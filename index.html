@@ -15,22 +15,61 @@
     <header>
         <div class="container">
             <div class="header">
-                <a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.25 37.5H43.75" stroke="#F6F6F6" stroke-width="4" stroke-linecap="round"
-                        stroke-linejoin="round" /> 
-                    <path d="M6.25 25H43.75" stroke="#F6F6F6" stroke-width="4" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M6.25 12.5H43.75" stroke="#F6F6F6" stroke-width="4" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg></a>
+                <div class="burger">
+                    <a href="#" id="burger-main">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 37.5H43.75" stroke="#F6F6F6" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" /> 
+                            <path d="M6.25 25H43.75" stroke="#F6F6F6" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6.25 12.5H43.75" stroke="#F6F6F6" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+
+                    <div class="burger-visible" id="burger-active">
+                        <a href="#" class="close-burger" id="burger-close">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.6462 0.416626L15.0003 12.0625L3.35449 0.416626L0.416992 3.35413L12.0628 15L0.416992 26.6458L3.35449 29.5833L15.0003 17.9375L26.6462 29.5833L29.5837 26.6458L17.9378 15L29.5837 3.35413L26.6462 0.416626Z" fill="#3F5ED2"/>
+                            </svg>
+                        </a>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Настройки</a></li>
+                            <li><a href="#">Весь ассортимент</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <img src="img/Group 17.png">
-                <a href=""><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M22.9167 39.5833C32.1214 39.5833 39.5833 32.1214 39.5833 22.9167C39.5833 13.7119 32.1214 6.25 22.9167 6.25C13.7119 6.25 6.25 13.7119 6.25 22.9167C6.25 32.1214 13.7119 39.5833 22.9167 39.5833Z"
-                        stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M43.75 43.75L34.6875 34.6875" stroke="white" stroke-width="4" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg></a>
+                <div class="input-group">
+                    <a href="#" id="search-icon">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.9167 39.5833C32.1214 39.5833 39.5833 32.1214 39.5833 22.9167C39.5833 13.7119 32.1214 6.25 22.9167 6.25C13.7119 6.25 6.25 13.7119 6.25 22.9167C6.25 32.1214 13.7119 39.5833 22.9167 39.5833Z"
+                                stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M43.75 43.75L34.6875 34.6875" stroke="white" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+
+                    <div class="input-container" id="input-search">
+                        <span class="input-icon">
+                            <svg width="30" height="30" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.9167 39.5833C32.1214 39.5833 39.5833 32.1214 39.5833 22.9167C39.5833 13.7119 32.1214 6.25 22.9167 6.25C13.7119 6.25 6.25 13.7119 6.25 22.9167C6.25 32.1214 13.7119 39.5833 22.9167 39.5833Z"
+                                    stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M43.75 43.75L34.6875 34.6875" stroke="black" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+
+                        <input 
+                            type="search"
+                            placeholder="Поиск.."
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -84,6 +123,7 @@
         </div>
     </footer>
 
+    <script src="./main.js"></script>
     <script src="https://kit.fontawesome.com/1ef2be7ade.js" crossorigin="anonymous"></script>
 </body>
 
